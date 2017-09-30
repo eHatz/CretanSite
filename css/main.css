@@ -1,5 +1,64 @@
+.home-section:nth-child(even) {
+	background-color: #ccc;
+}
+.home-section {
+	padding: 80px 0;
+}
+.home-section-carousel h1{
+	margin-bottom: 20px;
+}
+.home-section-about, .home-section-mission h2 {
+	text-align: center;
+}
+.home-section-about h2,
+.home-section-about p{
+	text-align: left;
+}
+.home-section-mission ul{
+	list-style-position: inside;
+	text-align: left;
+}
+.home-section-mission li, .home-section-about p {
+	font-size: 18px;
+	line-height: 28px;
+}
+.home-section-about .pya-logo {
+	max-width: 500px;
+}
+.pya-nav {
+	margin-bottom: 0;
+}
+
 #home-top-carousel {
 	width: 100%;
-	height: 300px;
-	max-height: 40vh;
+	height: 60vh;
+}
+.home-top-slides {
+	height: 60vh;
+	width: 100%;
+}
+.home-top-slide-1 {
+	background: url(../images/group-shot3.jpeg) no-repeat top center;
+	background-size: cover;
+}
+.home-top-slide-2 {
+	background: url(../images/dancing.jpeg) no-repeat top center;
+	background-size: cover;
+}
+.home-top-slide-3 {
+	background: url(../images/group-shot1.jpeg) no-repeat top center;
+	background-size: cover;
+}
+@media screen and (max-width: 992px) {
+	.home-section-about h2 {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	.home-top-slides {
+		height: 30vh;
+	}
+	#home-top-carousel {
+		height: 30vh;
+	}
 }

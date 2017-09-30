@@ -2,43 +2,103 @@
 <html>
 <head>
 	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<div id="home-top-carousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#home-top-carousel" data-slide-to="0" class="active"></li>
-			<li data-target="#home-top-carousel" data-slide-to="1"></li>
-			<li data-target="#home-top-carousel" data-slide-to="2"></li>
-		</ol>
+	<nav class="navbar navbar-default pya-nav">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./home.html">PYA</a>
+			</div>
 
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="../images/flyer.jpeg" alt="Flyer">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Hotel/Location</a></li>
+					<li><a href="#">Registration</a></li>
+					<li><a href="#">Schedule</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<section class="home-section home-section-carousel">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>PYA WINTER CONFRENCE JAN 4 - JAN 7, 2018<br>New Brunswick, NJ</h1>
+						<div id="home-top-carousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#home-top-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#home-top-carousel" data-slide-to="1"></li>
+								<li data-target="#home-top-carousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active home-top-slides home-top-slide-1">
+								</div>
+								<div class="item home-top-slides home-top-slide-2">
+								</div>
+								<div class="item home-top-slides home-top-slide-3">
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#home-top-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#home-top-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="item">
-				<img src="../images/dancing.jpeg" alt="Dancing Image">
-			</div>
-			<div class="item">
-				<img src="../images/group-shot3.jpeg" alt="Dancing Image">
+	</section>
+	<section class="home-section home-section-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img class="pya-logo" src="../images/Final_Logo.png" width="100%">
+				</div>
+				<div class="col-lg-7">
+					<h2>About Us:</h2>
+					<p>Founded in 1948 with the help of Mary Vasilakis and other youth whose families were members of the Pancretan Association of America, (PAA), the PYA is the oldest national Greek American youth association. Tens of thousands of youth and young adults have transitioned into adulthood through the PYA, passing along the sacred traditions and heritage of their ancestral homeland through their annual national and local events. The organization is currently comprised of twenty chapters throughout the United States and Canada and is governed by a national PYA Board of Directors. The group’s purpose is to promote and develop social and cultural relationships and mutuality among members of the Cretan Diaspora, promoting education through scholarships, raising philanthropic awareness through initiatives designed to aid institutions in the United States, Canada, on the island of Crete, and to help promote further community involvement in programs and discussions directed by the Pancretan Association of America (PAA).</p>
+					<p>To see the full article <a href="http://www.neomagazine.com/2017/03/united-we-stand-pancretan-youth-association-winter-2017-conference/"> click here.</a></p>
+				</div>
 			</div>
 		</div>
-
-		<!-- Controls -->
-		<a class="left carousel-control" href="#home-top-carousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#home-top-carousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-
-	
+	</section>
+	<section class="home-section home-section-mission">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>The purpose of the Pancretan Youth Association is and always shall be:</h2>
+					<ul>
+						<li>To promote and develop social and cultural relationships and mutuality among all of the Cretans and their descendants residing in the United States and Canada.</li>
+						<li>To promote and develop education; through scholarships and otherwise; to raise voluntary contributions and funds; and to distribute such funds legally to recognized philanthropic institutions, in the United States, Canada, Greece (i.e. the island of Crete), and for other philanthropic purposes.</li>
+						<li>To inspire and encourage loyalty and devotion of each member to his adopted country and its flag, obedience to its constitution and laws, and to instruct and encourage non-citizens members to become citizens of their respective country.</li>
+						<li>To give such moral encouragement and legal material assistance, which is considered necessary for the welfare and benefit of the members in the PYA.</li>
+						<li>To work in co-operation with and as a part of the PAA, promoting its activities and programs of the PYA.</li>
+						<li>To encourage those individuals who no longer qualify for membership to the PYA to enroll and continue to participate as members of the PAA.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

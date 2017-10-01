@@ -58,9 +58,15 @@
 	list-style-position: inside;
 	text-align: left;
 }
-.home-section-mission li, .home-section-about p {
+.home-section-mission li,
+.home-section-mission p,
+.home-section-about p {
 	font-size: 18px;
 	line-height: 28px;
+}
+.home-section-mission p {
+	font-weight: bold;
+	margin-top: 20px;
 }
 .home-section-about .pya-logo {
 	max-width: 500px;

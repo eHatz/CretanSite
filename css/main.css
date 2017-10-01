@@ -17,13 +17,15 @@
 .home-register .home-register-txt {
 	background-color: rgba(0, 0, 0, .5);
 	height: 100vh;
+	display: table;
+	width: 100%;
 }
 .home-register .home-register-inner {
 	color: white;
 	text-align: center;
-	max-width: 700px;
 	margin: auto;
-	padding-top: 40vh;
+	display: table-cell;
+	vertical-align: middle;
 }
 .home-register .home-register-inner h1{
 	font-size: 50px;

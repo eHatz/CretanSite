@@ -4,8 +4,45 @@
 .home-section {
 	padding: 80px 0;
 }
-.home-section-carousel h1{
+.home-section-carousel h2{
 	margin-bottom: 20px;
+	text-align: center;
+	margin-top: 0;
+}
+.home-register {
+	height: 100vh;
+	background: url(../images/group-shot3.jpeg) no-repeat top center;
+	background-size: cover;
+}
+.home-register .home-register-txt {
+	background-color: rgba(0, 0, 0, .5);
+	height: 100vh;
+}
+.home-register .home-register-inner {
+	color: white;
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
+	padding-top: 40vh;
+}
+.home-register .home-register-inner h1{
+	font-size: 50px;
+}
+.home-register .home-register-inner h2{
+	font-size: 40px;
+	margin: 0;
+}
+.home-register .home-register-inner button{
+	background-color: transparent;
+	font-size: 30px;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: 2px solid white;
+	border-radius: 6px;
+
+}
+.home-register .home-register-inner button:focus {
+	outline: 0;
 }
 .home-section-about, .home-section-mission h2 {
 	text-align: center;
@@ -25,20 +62,12 @@
 .home-section-about .pya-logo {
 	max-width: 500px;
 }
-.pya-nav {
-	margin-bottom: 0;
-}
-
-#home-top-carousel {
-	width: 100%;
-	height: 60vh;
-}
 .home-top-slides {
 	height: 60vh;
 	width: 100%;
 }
 .home-top-slide-1 {
-	background: url(../images/group-shot3.jpeg) no-repeat top center;
+	background: url(../images/3-people.jpeg) no-repeat top center;
 	background-size: cover;
 }
 .home-top-slide-2 {
@@ -48,6 +77,38 @@
 .home-top-slide-3 {
 	background: url(../images/group-shot1.jpeg) no-repeat top center;
 	background-size: cover;
+}
+.pya-nav {
+	margin-bottom: 0;
+}
+
+
+.schedule-section {
+	background-color: #ccc;
+	padding-top: 40px;
+}
+.schedule-section img{
+	padding-top: 15px;
+}
+.schedule-section .container {
+	background-color: white;
+}
+.schedule-section h1{
+	margin-bottom: 40px;
+}
+.schedule-section dl{
+	font-size: 18px;
+}
+.schedule-section dd{
+	margin-left: 40px;
+}
+.schedule-section .schedule-regBtn {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.schedule-section .schedule-regBtn button{
+	font-size: 18px;
 }
 @media screen and (max-width: 992px) {
 	.home-section-about h2 {
@@ -60,5 +121,34 @@
 	}
 	#home-top-carousel {
 		height: 30vh;
+	}
+}
+@media screen and (max-width: 767px) {
+	.home-register {
+		height: 50vh;
+		min-height: 300px;
+	}
+	.home-register .home-register-txt {
+		height: 50vh;
+		min-height: 300px;
+		position: relative;
+	}
+	.home-register .home-register-inner {
+		padding: 20px 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+	}
+	.home-register .home-register-inner h1{
+		font-size: 25px;
+	}
+	.home-register .home-register-inner h2{
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.home-register .home-register-inner button{
+		font-size: 18px;
+		margin-top: 10px;
+
 	}
 }

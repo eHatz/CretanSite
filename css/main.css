@@ -11,11 +11,11 @@
 }
 .home-register {
 	height: 100vh;
-	background: url(../images/group-shot3.jpeg) no-repeat top center;
+	background: url(../images/home-banner.png) no-repeat top right;
 	background-size: cover;
 }
 .home-register .home-register-txt {
-	background-color: rgba(0, 0, 0, .5);
+
 	height: 100vh;
 	display: table;
 	width: 100%;
@@ -47,7 +47,7 @@
 .home-register .home-register-inner button:focus {
 	outline: 0;
 }
-.home-section-about, .home-section-mission h2 {
+.home-section-about, .home-section-mission h1 {
 	text-align: center;
 }
 .home-section-about h2,

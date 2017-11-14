@@ -177,6 +177,7 @@ li, p, dl {
 .section-hotel h2 {
 	margin-bottom: 30px;
 }
+
 .activity-name,
 .activity-descr span,
 .activity-address span,
@@ -243,5 +244,8 @@ li, p, dl {
 	}
 	.near-food-row:nth-child(even) {
 		background-color: #ddd;
+	}
+	.activity {
+		margin-bottom: 30px;
 	}
 }

@@ -1,21 +1,30 @@
+li, p, dl {
+	font-size: 18px;
+	line-height: 28px;
+}
+.container-white-bg {
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.grey-bg {
+	background-color: #ddd;
+}
 .home-section:nth-child(even) {
 	background-color: #ccc;
 }
 .home-section {
 	padding: 80px 0;
 }
-.home-section-carousel h2{
-	margin-bottom: 20px;
-	text-align: center;
-	margin-top: 0;
-}
+
 .home-register {
 	height: 100vh;
-	background: url(../images/home-banner.png) no-repeat top right;
+	background: url(../content/images/home-banner.png) no-repeat center right;
 	background-size: cover;
 }
 .home-register .home-register-txt {
-
 	height: 100vh;
 	display: table;
 	width: 100%;
@@ -50,7 +59,32 @@
 .home-section-about, .home-section-mission h1 {
 	text-align: center;
 }
-.home-section-about h2,
+.home-section-mission h1 {
+	margin-bottom: 40px;
+}
+
+.home-section-sponsors h1,
+.home-section-sponsors p {
+	text-align: center;
+}
+.home-section-sponsors h1 {
+	margin-bottom: 40px;
+}
+.home-section-sponsors p {
+	margin-top: 30px;
+}
+.home-section-sponsors .sponsor-logo-div {
+	display: flex;
+	align-items: left;
+	flex-wrap: wrap;
+}
+.home-section-sponsors img{
+	padding: 10px;
+	width: 20%;
+}
+.home-section-about h1 {
+	margin-bottom: 40px;
+}
 .home-section-about p{
 	text-align: left;
 }
@@ -58,12 +92,7 @@
 	list-style-position: inside;
 	text-align: left;
 }
-.home-section-mission li,
-.home-section-mission p,
-.home-section-about p {
-	font-size: 18px;
-	line-height: 28px;
-}
+
 .home-section-mission p {
 	font-weight: bold;
 	margin-top: 20px;
@@ -75,29 +104,30 @@
 	height: 60vh;
 	width: 100%;
 }
-.home-top-slide-1 {
-	background: url(../images/3-people.jpeg) no-repeat top center;
-	background-size: cover;
-}
-.home-top-slide-2 {
-	background: url(../images/dancing.jpeg) no-repeat top center;
-	background-size: cover;
-}
-.home-top-slide-3 {
-	background: url(../images/group-shot1.jpeg) no-repeat top center;
-	background-size: cover;
-}
+
 .pya-nav {
 	margin-bottom: 0;
+	background-color: #C2C2C2;
+	border: 0;
+	border-bottom: #0024AB solid 5px;
+	border-radius: 0;
+	padding: 6px;
+}
+.pya-nav.navbar-default .navbar-nav>li>a {
+	color: #333;
+	font-weight: bold;
 }
 
-
-.schedule-section {
-	background-color: #ccc;
-	padding-top: 40px;
+.pya-nav.navbar-default .navbar-toggle {
+	border-color: #333 !important;
+	background-color: #333 !important;
 }
-.schedule-section img{
-	padding-top: 15px;
+.pya-nav.navbar-default .navbar-toggle .icon-bar {
+	background-color: #c2c2c2;
+}
+.pya-nav.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: 0;
+	box-shadow: none;
 }
 .schedule-section .container {
 	background-color: white;
@@ -105,9 +135,7 @@
 .schedule-section h1{
 	margin-bottom: 40px;
 }
-.schedule-section dl{
-	font-size: 18px;
-}
+
 .schedule-section dd{
 	margin-left: 40px;
 }
@@ -119,6 +147,43 @@
 .schedule-section .schedule-regBtn button{
 	font-size: 18px;
 }
+
+/*HOTEL PAGE/LOCATION*/
+#neaby-food-table {
+}
+#neaby-food-table p{
+	margin-bottom: 0;
+	line-height: 20px;
+}
+.near-food-head {
+	font-weight: bold;
+	background-color: #ddd;
+	padding: 8px 5px;
+}
+.near-food-row {
+	padding: 5px 5px;
+	text-align: left;
+}
+.near-food-row:nth-child(odd) {
+	background-color: #ddd;
+}
+.near-food-col {
+	width: 25%;
+	display: inline-block;
+	margin-right: -4px;
+	padding: 0 5px;
+	vertical-align: top;
+}
+.section-hotel h2 {
+	margin-bottom: 30px;
+}
+.activity-name,
+.activity-descr span,
+.activity-address span,
+.activity-dist span {
+	font-weight: bold;
+}
+
 @media screen and (max-width: 992px) {
 	.home-section-about h2 {
 		text-align: center;
@@ -126,9 +191,6 @@
 }
 @media screen and (max-width: 768px) {
 	.home-top-slides {
-		height: 30vh;
-	}
-	#home-top-carousel {
 		height: 30vh;
 	}
 }
@@ -162,5 +224,24 @@
 		font-size: 18px;
 		margin-top: 10px;
 
+	}
+	/*HOTEL/LOCATION PAGE*/
+
+	.near-food-col {
+		width: 100%;
+		display: block;
+		margin-right: 0px;
+	}
+	.near-food-col p span{
+		line-height: 28px;
+	}
+	.near-food-col p span{
+		font-weight: bold;
+	}
+	.near-food-row:nth-child(odd) {
+		background-color: white;
+	}
+	.near-food-row:nth-child(even) {
+		background-color: #ddd;
 	}
 }

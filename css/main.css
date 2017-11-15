@@ -10,7 +10,7 @@ li, p, dl {
 	margin-bottom: 40px;
 }
 .grey-bg {
-	background-color: #ddd;
+	background-color: #eee;
 }
 .home-section:nth-child(even) {
 	background-color: #eee;

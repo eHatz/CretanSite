@@ -33,6 +33,7 @@ li, p, dl {
 	width: 100%;
 	text-align: center;
 	color: white;
+	padding: 0 15px;
 }
 .home-register .home-register-text h1{
 	font-size: 30px;

@@ -23,6 +23,15 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="./home.html#home-section-sponsors">Our Sponsors</a></li>
+							<li><a href="./home.html#home-section-about"">About Us</a></li>
+							<li><a href="./home.html#home-section-philanthropy">Philanthropy</a></li>
+							<li><a href="./home.html#home-section-mission">Our Purpose</a></li>
+						</ul>
+					</li>
 					<li><a href="./hotel.html">Hotel/Location</a></li>
 					<li><a href="https://form.jotform.com/72705255537156" target="_blank">Registration</a></li>
 					<li><a href="./schedule.html">Schedule</a></li>
@@ -32,20 +41,21 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 	<section class="home-register">
-		<div class="home-register-txt">
-			<div class="home-register-inner">
-				<h1>PYA WINTER CONFERENCE</h1>
-				<h2>JAN 4 - JAN 7 2018</h2>
-				<h2> New Brunswick, NJ</h2>
-				<a href="https://form.jotform.com/72705255537156" target="_blank">
-					<button id="home-reg-btn">
-						Register Now
-					</button>
-				</a>
-			</div>
+		<img class="hidden-xs" src="./content/images/finalbanner.png">
+		<div class="home-register-text visible-xs">
+			<h1>PYA WINTER CONFERENCE</h1>
+			<h2>JAN 4 - JAN 7 2018</h2>
+			<h2>New Brunswick, NJ</h2>
+		</div>
+		<div class="home-register-inner">
+			<a href="https://form.jotform.com/72705255537156" target="_blank">
+				<button id="home-reg-btn">
+					Register Now
+				</button>
+			</a>
 		</div>
 	</section>
-	<section class="home-section home-section-sponsors">
+	<section class="home-section" id="home-section-sponsors">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -62,22 +72,52 @@
 			</div>
 		</div>
 	</section>
-	<section class="home-section home-section-about">
+
+	<section class="home-section" id="home-section-about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<h1>About Us</h1>
+				</div>
+				<div class="col-sm-6">
+					<div class="cretan-video">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/T29_sy4EDng?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 hidden-xs">
+					<img src="./content/images/dancing.jpeg" width="100%">
+				</div>
+				<div class="col-sm-12">
 					<p>Founded in 1948 with the help of Mary Vasilakis and other youth whose families were members of the Pancretan Association of America, (PAA), the PYA is the oldest national Greek American youth association. Tens of thousands of youth and young adults have transitioned into adulthood through the PYA, passing along the sacred traditions and heritage of their ancestral homeland through their annual national and local events. The organization is currently comprised of twenty chapters throughout the United States and Canada and is governed by a national PYA Board of Directors. The group&#8217;s purpose is to promote and develop social and cultural relationships and mutuality among members of the Cretan Diaspora, promoting education through scholarships, raising philanthropic awareness through initiatives designed to aid institutions in the United States, Canada, on the island of Crete, and to help promote further community involvement in programs and discussions directed by the Pancretan Association of America (PAA).</p>
 					<p>To see the full article <a href="http://www.neomagazine.com/2017/03/united-we-stand-pancretan-youth-association-winter-2017-conference/"> click here.</a></p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="home-section home-section-mission">
+	<section class="home-section" id="home-section-philanthropy">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Philanthropy</h1>
+					<img src="./content/images/RWJ-logo.jpg">
+					<p>
+						Please join us in our efforts to help hospitalized children. We will be collecting toys to donate to The Bristol-Myers Squibb Children's Hospital at Robert Wood Johnson University Hospital in New Brunswick, NJ. Below you will see their wish list and we ask that you bring a toy with you to registration for this great cause.
+						<br />
+						For more information or to view their wish list please click <a href="http://www.bmsch.org/about-bmsch/child-life-program-overview/donations/">here</a>.
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="home-section" id="home-section-mission">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Pan Cretan Youth of America</h1>
+					<img src="./content/images/group-photo-1.jpg" width="100%">
 					<p>The purpose of the Pancretan Youth Association is and always shall be:</p>
 					<ul>
 						<li>To promote and develop social and cultural relationships and mutuality among all of the Cretans and their descendants residing in the United States and Canada.</li>
@@ -91,7 +131,9 @@
 			</div>
 		</div>
 	</section>
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

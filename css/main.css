@@ -13,36 +13,42 @@ li, p, dl {
 	background-color: #ddd;
 }
 .home-section:nth-child(even) {
-	background-color: #ccc;
+	background-color: #eee;
 }
 .home-section {
 	padding: 80px 0;
 }
-
-.home-register {
-	height: 100vh;
-	background: url(../content/images/home-banner.png) no-repeat center right;
-	background-size: cover;
+.cretan-video {
+	margin-bottom: 30px;
 }
-.home-register .home-register-txt {
-	height: 100vh;
-	display: table;
+.home-register {
+	position: relative;
+	background-color: black;
+}
+.home-register img{
 	width: 100%;
 }
+.home-register .home-register-text{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.home-register .home-register-text h1{
+	font-size: 30px;
+}
+.home-register .home-register-text h2{
+	font-size: 25px;
+}
+
 .home-register .home-register-inner {
 	color: white;
 	text-align: center;
-	margin: auto;
-	display: table-cell;
-	vertical-align: middle;
+	padding: 20px 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 150px;
 }
-.home-register .home-register-inner h1{
-	font-size: 50px;
-}
-.home-register .home-register-inner h2{
-	font-size: 40px;
-	margin: 0;
-}
+
 .home-register .home-register-inner button{
 	background-color: transparent;
 	font-size: 30px;
@@ -56,48 +62,57 @@ li, p, dl {
 .home-register .home-register-inner button:focus {
 	outline: 0;
 }
-.home-section-about, .home-section-mission h1 {
+#home-section-about, #home-section-mission h1 {
 	text-align: center;
 }
-.home-section-mission h1 {
+#home-section-mission h1 {
 	margin-bottom: 40px;
 }
 
-.home-section-sponsors h1,
-.home-section-sponsors p {
+#home-section-sponsors h1,
+#home-section-sponsors p {
 	text-align: center;
 }
-.home-section-sponsors h1 {
+#home-section-sponsors h1 {
 	margin-bottom: 40px;
 }
-.home-section-sponsors p {
+#home-section-sponsors p {
 	margin-top: 30px;
 }
-.home-section-sponsors .sponsor-logo-div {
+#home-section-sponsors .sponsor-logo-div {
 	display: flex;
 	align-items: left;
 	flex-wrap: wrap;
 }
-.home-section-sponsors img{
+#home-section-sponsors img{
 	padding: 10px;
 	width: 20%;
 }
-.home-section-about h1 {
+#home-section-philanthropy h1 {
+	text-align: center;
 	margin-bottom: 40px;
 }
-.home-section-about p{
+#home-section-philanthropy img {
+	float: left;
+	margin: 0 20px 20px 0;
+	height: 120px;
+}
+#home-section-about h1 {
+	margin-bottom: 40px;
+}
+#home-section-about p{
 	text-align: left;
 }
-.home-section-mission ul{
+#home-section-mission ul{
 	list-style-position: inside;
 	text-align: left;
 }
 
-.home-section-mission p {
+#home-section-mission p {
 	font-weight: bold;
 	margin-top: 20px;
 }
-.home-section-about .pya-logo {
+#home-section-about .pya-logo {
 	max-width: 500px;
 }
 .home-top-slides {
@@ -185,9 +200,28 @@ li, p, dl {
 	font-weight: bold;
 }
 
+@media screen and (max-width: 1400px) {
+	.home-register .home-register-inner {
+		bottom: 100px;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.home-register .home-register-inner {
+		bottom: 40px;
+	}
+}
+
 @media screen and (max-width: 992px) {
-	.home-section-about h2 {
+	#home-section-about h2 {
 		text-align: center;
+	}
+	.home-register .home-register-inner {
+		bottom: 0px;
+	}
+	#home-section-sponsors img {
+		width: 25%;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -199,32 +233,28 @@ li, p, dl {
 	.home-section {
 		padding: 40px 0;
 	}
-	.home-register {
-		height: 50vh;
-		min-height: 300px;
-	}
-	.home-register .home-register-txt {
-		height: 50vh;
-		min-height: 300px;
-		position: relative;
-	}
 	.home-register .home-register-inner {
-		padding: 20px 10px;
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-	}
-	.home-register .home-register-inner h1{
-		font-size: 25px;
-	}
-	.home-register .home-register-inner h2{
-		font-size: 18px;
-		margin-bottom: 5px;
+		position: initial;
 	}
 	.home-register .home-register-inner button{
 		font-size: 18px;
 		margin-top: 10px;
-
+	}
+	#home-section-philanthropy {
+		text-align: center;
+	}
+	#home-section-philanthropy p{
+		text-align: left;
+	}
+	#home-section-philanthropy img {
+		float: none;
+		margin: 0 0 20px 0;
+		height: unset;
+		max-width: 100%;
+	}
+	#home-section-sponsors img {
+		width: 33.333%;
+		min-width: 150px;
 	}
 	/*HOTEL/LOCATION PAGE*/
 
@@ -247,5 +277,16 @@ li, p, dl {
 	}
 	.activity {
 		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 500px) {
+	#home-section-sponsors .sponsor-logo-div {
+		display: block;
+	}
+	#home-section-sponsors img {
+		width: 200px;
+		max-width: 100%;
+		margin: auto;
+		display: block;
 	}
 }

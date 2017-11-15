@@ -24,6 +24,7 @@ li, p, dl {
 .home-register {
 	position: relative;
 	background-color: black;
+	padding: 20px 0;
 }
 .home-register img{
 	width: 100%;

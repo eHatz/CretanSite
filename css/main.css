@@ -85,10 +85,12 @@ li, p, dl {
 	display: flex;
 	align-items: left;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 #home-section-sponsors img{
 	padding: 10px;
-	width: 20%;
+	max-height: 250px;
+	max-width: 100%;
 }
 #home-section-philanthropy h1 {
 	text-align: center;
@@ -222,9 +224,6 @@ li, p, dl {
 	.home-register .home-register-inner {
 		bottom: 0px;
 	}
-	#home-section-sponsors img {
-		width: 25%;
-	}
 }
 @media screen and (max-width: 768px) {
 	.home-top-slides {
@@ -254,10 +253,7 @@ li, p, dl {
 		height: unset;
 		max-width: 100%;
 	}
-	#home-section-sponsors img {
-		width: 33.333%;
-		min-width: 150px;
-	}
+
 	/*HOTEL/LOCATION PAGE*/
 
 	.near-food-col {
@@ -286,8 +282,9 @@ li, p, dl {
 		display: block;
 	}
 	#home-section-sponsors img {
-		width: 200px;
-		max-width: 100%;
+		width: 100%;
+		height: unset;
+		max-height: unset;
 		margin: auto;
 		display: block;
 	}
